@@ -11,10 +11,12 @@ jobs:
   test-and-upstream:
     runs-on: ubuntu-latest
     steps:
-      - name: Go to Kotlin dir
-      - run: pwd
-      - run: ls ${{ github.workspace }}
-      - run: ls /home/runner
+      - name: Where am I?
+        run: pwd
+      - name: What is here?
+        run: ls ${{ github.workspace }}
+      - name: Does this dir exist and what is in there?
+        run: ls /home/runner
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up JDK 18
