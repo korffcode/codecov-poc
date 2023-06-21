@@ -12,9 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Go to Kotlin dir
-        run: cd /home/runner/work/codecov-poc/codecov-poc/kotlintest
-        run: |
-          ls ${{ github.workspace }}
+        run: cd /home/runner/work/codecov-poc/codecov-poc/kotlintest  &&  ls ${{ github.workspace }}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up JDK 18
