@@ -20,7 +20,7 @@ jobs:
       - name: What is here now?
         run: ls ${{ github.workspace }}
       - name: cd to kotlintest.
-        run: cd ${{ github.workspace }}/kotlintest
+        run: cd /home/runner/work/codecov-poc/codecov-poc/kotlintest
       - name: What is in kotlintest?
         run: ls
       - name: Set up JDK 18
