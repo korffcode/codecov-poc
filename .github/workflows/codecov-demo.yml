@@ -1,4 +1,7 @@
-- name: Upload coverage reports to Codecov
+name: Upload coverage reports to Codecov
+run-name: ${{ github.actor }} is testing out Codecov 🚀
+on: [push]
+jobs:
   uses: codecov/codecov-action@v3
     env:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
