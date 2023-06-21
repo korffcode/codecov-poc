@@ -1,4 +1,5 @@
 name: Kotlin Maven Codecov
+run-name: ${{ github.actor }} is testing out Kotlin with Codecov 🚀
 on:
   push:
     branches:
