@@ -26,7 +26,4 @@ jobs:
         run: mvn verify
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: /home/runner/work/codecov-poc/codecov-poc/kotlintest/target/site/jacoco/jacoco.xml
-          verbose: true
+          env: CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
