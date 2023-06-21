@@ -14,10 +14,6 @@ jobs:
       run:
         working-directory: ./kotlintest
     steps:
-      - name: Where am I?
-        run: pwd
-      - name: What is here?
-        run: ls
       - name: Checkout
         uses: actions/checkout@v2
       - name: What is here now?
