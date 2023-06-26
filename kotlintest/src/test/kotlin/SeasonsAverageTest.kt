@@ -17,4 +17,32 @@ internal class SeasonsAverageTest {
             }
         """))
     }
+
+    @Test
+    fun testGetGameState() {
+        val expected = "P"
+
+        assertEquals(expected, testSeasonsAverage.getGameState("""
+            {
+                "__typename" : "ChampionshipGame",
+                "bracketId" : 201,
+                "gameState" : "P",
+                "startDate" : ""
+            }
+        """))
+    }
+
+    @Test
+    fun testGetStartDate() {
+        val expected = ""
+
+        assertEquals(expected, testSeasonsAverage.getStartDate("""
+            {
+                "__typename" : "ChampionshipGame",
+                "bracketId" : 201,
+                "gameState" : "P",
+                "startDate" : ""
+            }
+        """))
+    }
 }

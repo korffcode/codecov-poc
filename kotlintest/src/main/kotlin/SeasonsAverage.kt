@@ -8,6 +8,18 @@ data class SeasonsAverageModel(	val __typename: String,
                             val startDate: String)
 
 class SeasonsAverage {
+    fun getGameState(seasonsAverage: String): String {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.gameState
+    }
+
+    fun getStartDate(seasonsAverage: String): String {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.startDate
+    }
+
     fun getBracketId(seasonsAverage: String): Int {
         val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
 
