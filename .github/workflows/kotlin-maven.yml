@@ -3,10 +3,11 @@ run-name: ${{ github.actor }} is testing out Kotlin with Codecov 🚀
 on:
   push:
     branches:
-      - main
+      - SDCLOUD**
   pull_request:
     branches:
       - main
+      - integration
 jobs:
   test-and-upstream:
     runs-on: ubuntu-latest

@@ -5,7 +5,9 @@ import kotlinx.serialization.json.Json
 data class SeasonsAverageModel(	val __typename: String,
                             val bracketId: Int,
                             val gameState: String,
-                            val startDate: String)
+                            val startDate: String,
+							val homeTeamName: String,
+							val awayTeamName: String)
 
 class SeasonsAverage {
     fun getGameState(seasonsAverage: String): String {
