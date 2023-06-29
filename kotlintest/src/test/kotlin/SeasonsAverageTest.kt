@@ -13,7 +13,9 @@ internal class SeasonsAverageTest {
                 "__typename" : "ChampionshipGame",
                 "bracketId" : 201,
                 "gameState" : "P",
-                "startDate" : ""
+                "startDate" : "",
+                "homeTeamName" : "Reds",
+                "awayTeamName" : "Cubs"
             }
         """))
     }
@@ -27,7 +29,9 @@ internal class SeasonsAverageTest {
                 "__typename" : "ChampionshipGame",
                 "bracketId" : 201,
                 "gameState" : "P",
-                "startDate" : ""
+                "startDate" : "",
+                "homeTeamName" : "Reds",
+                "awayTeamName" : "Cubs"
             }
         """))
     }
@@ -41,7 +45,9 @@ internal class SeasonsAverageTest {
                 "__typename" : "ChampionshipGame",
                 "bracketId" : 201,
                 "gameState" : "P",
-                "startDate" : ""
+                "startDate" : "",
+                "homeTeamName" : "Reds",
+                "awayTeamName" : "Cubs"
             }
         """))
     }
