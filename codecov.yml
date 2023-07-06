@@ -1,9 +1,14 @@
 coverage:
   status:
+    patch:
+      default:
+        target: 80%
+        threshold: 1%
     project:
       default:
-        target: 80%    # the required coverage value
-        threshold: 1%  # the leniency in hitting the target
-        branches:
-          - master
-          - integration
+        # basic
+        target: 80%
+        threshold: 1%
+        if_ci_failed: error
+        informational: false
+        only_pulls: false
