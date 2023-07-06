@@ -27,4 +27,16 @@ class SeasonsAverage {
 
         return seasonsAverageObj.bracketId
     }
+
+    fun getHomeTeamName(seasonsAverage: String): String {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.homeTeamName
+    }
+
+    fun getAwayTeamName(seasonsAverage: String): String {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.awayTeamName
+    }
 }
