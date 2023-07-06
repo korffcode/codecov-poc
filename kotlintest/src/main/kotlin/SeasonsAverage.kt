@@ -9,6 +9,8 @@ data class SeasonsAverageModel(	val __typename: String,
 							val homeTeamName: String,
 							val awayTeamName: String)
 
+// Parse passed in json and return respective field.
+
 class SeasonsAverage {
     fun getGameState(seasonsAverage: String): String {
         val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
