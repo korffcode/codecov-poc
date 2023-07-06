@@ -8,7 +8,7 @@ on:
       - main
       - integration
 jobs:
-  test-and-upstream:
+  coverage-check-bryan:
     runs-on: ubuntu-latest
     defaults:
       run:
