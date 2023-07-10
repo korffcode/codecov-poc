@@ -1,14 +1,12 @@
 name: Kotlin Maven Codecov
-run-name: ${{ github.actor }} is testing out Kotlin with Codecov 🚀
 on:
   pull_request:
     paths:
       - 'kotlintest/**'
     branches:
       - main
-      - integration
 jobs:
-  coverage-check-bryan:
+  coverage-check-main-pr:
     runs-on: ubuntu-latest
     defaults:
       run:
