@@ -1,4 +1,4 @@
-name: Kotlin Maven Codecov
+name: Code Coverage Main
 on:
   pull_request:
     paths:
