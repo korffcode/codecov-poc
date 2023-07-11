@@ -67,4 +67,20 @@ internal class SeasonsAverageTest {
             }
         """))
     }
+
+    @Test
+    fun testGetAwayTeamName() {
+        val expected = "Cubs"
+
+        assertEquals(expected, testSeasonsAverage.getAwayTeamName("""
+            {
+                "__typename" : "ChampionshipGame",
+                "bracketId" : 201,
+                "gameState" : "P",
+                "startDate" : "",
+                "homeTeamName" : "Reds",
+                "awayTeamName" : "Cubs"
+            }
+        """))
+    }
 }
