@@ -1,0 +1,11 @@
+version = 1
+
+test_patterns = \[
+  "kotlintest/src/test/\*\*"
+]
+
+[[analyzers]]
+name = "kotlin"
+enabled = true
+name = "test-coverage"
+enabled = true
