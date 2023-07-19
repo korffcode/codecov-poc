@@ -7,5 +7,7 @@ test_patterns = \[
 [[analyzers]]
 name = "kotlin"
 enabled = true
+
+[[analyzers]]
 name = "test-coverage"
 enabled = true
