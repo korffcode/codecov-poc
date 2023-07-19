@@ -1,6 +1,8 @@
 name: SonarCloud Integration PR
 on:
   pull_request:
+    paths:
+      - 'kotlintest/**'
     types: [opened, synchronize, reopened]
     branches:
       - integration
@@ -8,6 +10,9 @@ jobs:
   build:
     name: Sonar Integration Analysis
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./kotlintest
     steps:
       - uses: actions/checkout@v3
         with:
