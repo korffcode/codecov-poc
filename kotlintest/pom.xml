@@ -17,6 +17,8 @@
 		<kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
 		<kotlin.version>1.8.21</kotlin.version>
 		<serialization.version>1.5.1</serialization.version>
+		<sonar.organization>korffcode</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<repositories>
