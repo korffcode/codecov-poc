@@ -7,8 +7,8 @@ on:
     branches:
       - integration
 jobs:
-  build:
-    name: Sonar Integration Analysis
+  coverage-check-integration-pr:
+    name: Sonar Integration Analysis Integration
     runs-on: ubuntu-latest
     defaults:
       run:
