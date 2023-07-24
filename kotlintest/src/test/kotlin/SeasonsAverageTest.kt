@@ -15,7 +15,9 @@ internal class SeasonsAverageTest {
                 "gameState" : "P",
                 "startDate" : "",
                 "homeTeamName" : "Reds",
-                "awayTeamName" : "Cubs"
+                "awayTeamName" : "Cubs",
+				"homeTeamScore" : 35,
+				"awayTeamScore" : 0
             }
         """))
     }
@@ -31,7 +33,9 @@ internal class SeasonsAverageTest {
                 "gameState" : "P",
                 "startDate" : "",
                 "homeTeamName" : "Reds",
-                "awayTeamName" : "Cubs"
+                "awayTeamName" : "Cubs",
+				"homeTeamScore" : 35,
+				"awayTeamScore" : 0
             }
         """))
     }
@@ -47,7 +51,9 @@ internal class SeasonsAverageTest {
                 "gameState" : "P",
                 "startDate" : "",
                 "homeTeamName" : "Reds",
-                "awayTeamName" : "Cubs"
+                "awayTeamName" : "Cubs",
+				"homeTeamScore" : 35,
+				"awayTeamScore" : 0
             }
         """))
     }
@@ -63,12 +69,13 @@ internal class SeasonsAverageTest {
                 "gameState" : "P",
                 "startDate" : "",
                 "homeTeamName" : "Reds",
-                "awayTeamName" : "Cubs"
+                "awayTeamName" : "Cubs",
+				"homeTeamScore" : 35,
+				"awayTeamScore" : 0
             }
         """))
     }
 
-	/*
     @Test
     fun testGetAwayTeamName() {
         val expected = "Cubs"
@@ -80,9 +87,10 @@ internal class SeasonsAverageTest {
                 "gameState" : "P",
                 "startDate" : "",
                 "homeTeamName" : "Reds",
-                "awayTeamName" : "Cubs"
+                "awayTeamName" : "Cubs",
+				"homeTeamScore" : 35,
+				"awayTeamScore" : 0
             }
         """))
     }
-	*/
 }
