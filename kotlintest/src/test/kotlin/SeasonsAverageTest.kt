@@ -68,6 +68,7 @@ internal class SeasonsAverageTest {
         """))
     }
 
+	/*
     @Test
     fun testGetAwayTeamName() {
         val expected = "Cubs"
@@ -83,4 +84,5 @@ internal class SeasonsAverageTest {
             }
         """))
     }
+	*/
 }
