@@ -1,8 +1,5 @@
 name: SonarCloud Main PR
 on:
-  push:
-    branches:
-      - main
   pull_request:
     paths:
       - 'kotlintest/**'
