@@ -16,8 +16,8 @@ internal class SeasonsAverageTest {
                 "startDate" : "",
                 "homeTeamName" : "Reds",
                 "awayTeamName" : "Cubs",
-				"homeTeamScore" : 35,
-				"awayTeamScore" : 0
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
             }
         """))
     }
@@ -34,8 +34,8 @@ internal class SeasonsAverageTest {
                 "startDate" : "",
                 "homeTeamName" : "Reds",
                 "awayTeamName" : "Cubs",
-				"homeTeamScore" : 35,
-				"awayTeamScore" : 0
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
             }
         """))
     }
@@ -52,8 +52,8 @@ internal class SeasonsAverageTest {
                 "startDate" : "",
                 "homeTeamName" : "Reds",
                 "awayTeamName" : "Cubs",
-				"homeTeamScore" : 35,
-				"awayTeamScore" : 0
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
             }
         """))
     }
@@ -70,8 +70,8 @@ internal class SeasonsAverageTest {
                 "startDate" : "",
                 "homeTeamName" : "Reds",
                 "awayTeamName" : "Cubs",
-				"homeTeamScore" : 35,
-				"awayTeamScore" : 0
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
             }
         """))
     }
@@ -88,8 +88,8 @@ internal class SeasonsAverageTest {
                 "startDate" : "",
                 "homeTeamName" : "Reds",
                 "awayTeamName" : "Cubs",
-				"homeTeamScore" : 35,
-				"awayTeamScore" : 0
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
             }
         """))
     }
@@ -106,8 +106,8 @@ internal class SeasonsAverageTest {
                 "startDate" : "",
                 "homeTeamName" : "Reds",
                 "awayTeamName" : "Cubs",
-				"homeTeamScore" : 35,
-				"awayTeamScore" : 0
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
             }
         """))
     }
@@ -124,8 +124,8 @@ internal class SeasonsAverageTest {
                 "startDate" : "",
                 "homeTeamName" : "Reds",
                 "awayTeamName" : "Cubs",
-				"homeTeamScore" : 35,
-				"awayTeamScore" : 0
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
             }
         """))
     }
