@@ -93,4 +93,40 @@ internal class SeasonsAverageTest {
             }
         """))
     }
+
+    @Test
+    fun testGetHomeTeamScore() {
+        val expected = 35
+
+        assertEquals(expected, testSeasonsAverage.getHomeTeamScore("""
+            {
+                "__typename" : "ChampionshipGame",
+                "bracketId" : 201,
+                "gameState" : "P",
+                "startDate" : "",
+                "homeTeamName" : "Reds",
+                "awayTeamName" : "Cubs",
+				"homeTeamScore" : 35,
+				"awayTeamScore" : 0
+            }
+        """))
+    }
+
+    @Test
+    fun testGetAwayTeamScore() {
+        val expected = 0
+
+        assertEquals(expected, testSeasonsAverage.getAwayTeamScore("""
+            {
+                "__typename" : "ChampionshipGame",
+                "bracketId" : 201,
+                "gameState" : "P",
+                "startDate" : "",
+                "homeTeamName" : "Reds",
+                "awayTeamName" : "Cubs",
+				"homeTeamScore" : 35,
+				"awayTeamScore" : 0
+            }
+        """))
+    }
 }
