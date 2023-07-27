@@ -14,6 +14,12 @@ data class SeasonsAverageModel(val __typename: String,
 // Dummy comment to create pull request.
 
 class SeasonsAverage {
+    fun getTypename(seasonsAverage: String): String {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.__typename
+    }
+
     fun getGameState(seasonsAverage: String): String {
         val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
 
