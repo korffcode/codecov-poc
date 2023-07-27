@@ -2,12 +2,14 @@ import kotlinx.serialization.*
 import kotlinx.serialization.json.Json
 
 @Serializable
-data class SeasonsAverageModel(	val __typename: String,
+data class SeasonsAverageModel(val __typename: String,
                             val bracketId: Int,
                             val gameState: String,
                             val startDate: String,
-							val homeTeamName: String,
-							val awayTeamName: String)
+                            val homeTeamName: String,
+                            val awayTeamName: String,
+                            val homeTeamScore: Int,
+                            val awayTeamScore: Int)
 
 // Dummy comment to create pull request.
 
@@ -40,5 +42,17 @@ class SeasonsAverage {
         val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
 
         return seasonsAverageObj.awayTeamName
+    }
+
+    fun getHomeTeamScore(seasonsAverage: String): Int {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.homeTeamScore
+    }
+
+    fun getAwayTeamScore(seasonsAverage: String): Int {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.awayTeamScore
     }
 }
