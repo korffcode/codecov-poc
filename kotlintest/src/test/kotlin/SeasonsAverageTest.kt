@@ -129,4 +129,36 @@ internal class SeasonsAverageTest {
             }
         """))
     }
+
+    @Test
+    fun testGetTypename() {
+        val expected = "ChampionshipGame"
+
+        assertEquals(expected, testSeasonsAverage.getTypename("""
+            {
+                "__typename" : "ChampionshipGame",
+                "bracketId" : 201,
+                "gameState" : "P",
+                "startDate" : "",
+                "homeTeamName" : "Reds",
+                "awayTeamName" : "Cubs",
+                "homeTeamScore" : 35,
+                "awayTeamScore" : 0
+            }
+        """))
+    }
+
+    @Test
+    fun testMain() {
+        assertEquals(Unit, main(arrayOf(
+                "__typename",
+                "bracketId",
+                "gameState",
+                "startDate",
+                "homeTeamName",
+                "awayTeamName",
+                "homeTeamScore",
+                "awayTeamScore"
+        )))
+    }
 }
