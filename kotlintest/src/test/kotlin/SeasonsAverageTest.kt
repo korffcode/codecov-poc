@@ -76,6 +76,13 @@ internal class SeasonsAverageTest {
     }
 
     @Test
+    fun testGetStadium() {
+        val expected = "Riverfront"
+
+        assertEquals(expected, testSeasonsAverage.getStadium(testString))
+    }
+
+    @Test
     fun testMain() {
         assertEquals(Unit, main(arrayOf(
                 "__typename",
