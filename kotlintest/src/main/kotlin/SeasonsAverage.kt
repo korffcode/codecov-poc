@@ -9,7 +9,8 @@ data class SeasonsAverageModel(val __typename: String,
                             val homeTeamName: String,
                             val awayTeamName: String,
                             val homeTeamScore: Int,
-                            val awayTeamScore: Int)
+                            val awayTeamScore: Int,
+                            val stadium: String)
 
 // Dummy comment to create pull request.
 
@@ -60,5 +61,11 @@ class SeasonsAverage {
         val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
 
         return seasonsAverageObj.awayTeamScore
+    }
+
+    fun getStadium(seasonsAverage: String): String {
+        val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)
+
+        return seasonsAverageObj.stadium
     }
 }
