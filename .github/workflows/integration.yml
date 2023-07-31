@@ -1,8 +1,5 @@
 name: SonarCloud Integration PR
 on:
-  push:
-    branches:
-      - integration
   pull_request:
     paths:
       - 'kotlintest/**'
