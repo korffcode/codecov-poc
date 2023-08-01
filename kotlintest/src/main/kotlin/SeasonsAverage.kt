@@ -12,8 +12,6 @@ data class SeasonsAverageModel(val __typename: String,
                             val awayTeamScore: Int,
                             val stadium: String)
 
-// Adding a new comment to see if this forces Sonar pr checks
-
 class SeasonsAverage {
     fun getTypename(seasonsAverage: String): String {
         val seasonsAverageObj = Json.decodeFromString<SeasonsAverageModel>(seasonsAverage)

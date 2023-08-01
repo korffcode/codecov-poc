@@ -19,7 +19,6 @@
 		<serialization.version>1.5.1</serialization.version>
 		<sonar.organization>korffcode</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<xyz.host.url>https://sonarcloud.io</xyz.host.url>
 	</properties>
 
 	<repositories>

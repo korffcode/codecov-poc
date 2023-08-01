@@ -1,4 +1,4 @@
-name: SonarCloud Integration PR
+name: Integration Action
 on:
   push:
     branches:
@@ -11,7 +11,7 @@ on:
       - integration
 jobs:
   coverage-check-integration-pr:
-    name: Sonar Integration Analysis Integration
+    name: Sonar Analysis Integration
     runs-on: ubuntu-latest
     defaults:
       run:
