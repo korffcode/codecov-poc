@@ -1,4 +1,4 @@
-name: SonarCloud Main PR
+name: Main Action
 on:
   push:
     branches:
@@ -11,7 +11,7 @@ on:
       - main
 jobs:
   coverage-check-main-pr:
-    name: Sonar Integration Analysis Main
+    name: Sonar Analysis Main
     runs-on: ubuntu-latest
     defaults:
       run:
