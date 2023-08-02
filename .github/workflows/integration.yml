@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 11
-          distribution: 'zulu' # Alternative distribution options are available.
+          distribution: 'zulu' # Alternative distribution options are available.  distribution is required
       - name: Cache SonarCloud packages
         uses: actions/cache@v3
         with:
